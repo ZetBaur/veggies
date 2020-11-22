@@ -1,11 +1,7 @@
-//@prepros-append jq-start.js
-//@prepros-append responsive.js
-//@prepros-append sliders.js
-//@prepros-append scroll.js
-//@prepros-append map.js
-//@prepros-append forms.js
-//@prepros-append script.js
-//@prepros-append jq-end.js
+
+
+
+
 $(document).ready(function() {
 		var w=$(window).outerWidth();
 		var h=$(window).outerHeight();
@@ -1170,7 +1166,7 @@ $(window).scroll(function() {
 $('#up').click(function(event) {
 	$('body,html').animate({scrollTop:0},300);
 });
-
+// =============================================================================
 $('body').on('click','.tab__navitem',function(event) {
 			var eq=$(this).index();
 		if($(this).hasClass('parent')){
@@ -1185,6 +1181,7 @@ $('body').on('click','.tab__navitem',function(event) {
 		}
 	}
 });
+// =============================================================
 $.each($('.spoller.active'), function(index, val) {
 	$(this).next().show();
 });
