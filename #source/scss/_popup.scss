@@ -11,18 +11,23 @@
 	overflow: auto;
 	z-index: 100;
 	&.active{
-		.popup-content{@include scale(1);}
+		.popup-content{
+			transform: scale(1);
+		}
 	}
 	&.show{display: block;
-		.popup-content{@include scale(1);}
+		.popup-content{
+			transform: scale(1);
+
+		}
 	}
 }
 .popup-table{height: 100%;table-layout: fixed;
 	>.cell{height: 100%;vertical-align: middle;padding: 30px 10px;}
 }
 .popup-content {
-	@include scale(0);
-	@include anim(0.3s, 0s);
+	transform: scale(1);
+transition: all .3s;
 	position: relative;
 	max-width: 500px;
 	margin: 0px auto;
