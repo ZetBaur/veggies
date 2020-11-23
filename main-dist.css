@@ -6,6 +6,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Barlow:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -388,7 +389,7 @@ body {
   font-size: 100%;
   line-height: 1;
   font-size: 14px;
-  font-family: "";
+  font-family: "orangejuice";
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -407,7 +408,7 @@ body.lock {
 input,
 button,
 textarea {
-  font-family: "";
+  font-family: "orangejuice";
 }
 
 input::-ms-clear {
@@ -450,6 +451,13 @@ h6 {
   font-size: inherit;
 }
 
+@font-face {
+  font-family: "orangejuice";
+  src: url("fonts/orangejuice20.woff") format("woff"), url("fonts/orangejuice20.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  display: swap;
+}
 .container {
   max-width: 1170px;
   margin: 0 auto;
