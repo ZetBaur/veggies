@@ -1,4 +1,15 @@
 
+
+$(document).ready(function(){
+
+
+
+
+	$('.slider').slick({});
+  
+
+
+
 // ================MENU and BURGER=============================================================================
     $('.burger').on('click', function(){
         $('.menu').toggleClass('open');
@@ -40,63 +51,4 @@ $(window).scroll(function() {
 $('#up').click(function(event) {
 	$('body,html').animate({scrollTop:0},300);
 });
-// ==================TABS===========================================================
-$('body').on('click','.tab-link',function(event) {
-			var eq=$(this).index();
-		if($(this).hasClass('parent')){
-			var eq=$(this).parent().index();
-		}
-	if(!$(this).hasClass('active')){
-			$(this).closest('.tabs').find('.tab-link').removeClass('active');
-			$(this).addClass('active');
-			$(this).closest('.tabs').find('.tab-item').removeClass('active').eq(eq).addClass('active');
-		if($(this).closest('.tabs').find('.slick-slider').length>0){
-			$(this).closest('.tabs').find('.slick-slider').slick('setPosition');
-		}
-	}
-});
-// ===================SPOLLER==========================================
 
-$.each($('.spoller.active'), function(index, val) {
-	$(this).next().show();
-});
-$('body').on('click','.spoller',function(event) {
-	if($(this).hasClass('mob') && !isMobile.any()){
-		return false;
-	}
-	if($(this).hasClass('closeall') && !$(this).hasClass('active')){
-		$.each($(this).closest('.spollers').find('.spoller'), function(index, val) {
-			$(this).removeClass('active');
-			$(this).next().slideUp(300);
-		});
-	}
-	$(this).toggleClass('active').next().slideToggle(300,function(index, val) {
-			if($(this).parent().find('.slick-slider').length>0){
-				$(this).parent().find('.slick-slider').slick('setPosition');
-			}
-	});
-	return false;
-});
-
-// ==================TIP=================================================================
-
-
-if($('.t,.tip').length>0){
-	tip();
-}
-function tip(){
-	$('.t,.tip').webuiPopover({
-		placement:'top',
-		trigger:'hover',
-		backdrop: false,
-		//selector:true,
-		animation:'fade',
-		dismissible: true,
-		padding:false,
-		//hideEmpty: true
-		onShow: function($element) {},
-		onHide: function($element) {},
-	}).on('show.webui.popover hide.webui.popover', function(e){
-		$(this).toggleClass('active');
-	});
-}
