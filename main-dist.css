@@ -1016,19 +1016,6 @@ textarea.input {
   padding: 0 15px;
 }
 
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  overflow: hidden;
-}
-.gallery-block__item {
-  display: inline-block;
-  width: 100px;
-}
-.gallery-block__item img {
-  max-width: 100%;
-}
-
 /*
 	.header-menu__icon{
 		display: block;
