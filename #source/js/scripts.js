@@ -1,50 +1,51 @@
 
 $(document).ready(function () {
 
+	// ==========================Magnif Popup===================================================================================================
+	$('.popup-link, .popup-link-2').magnificPopup({});
 
-	console.log(9);
 	// =======================================Slider=========================================================================================
 	$('.slider').slick({
-		dots: true,
-		infinite: false,
-		speed: 300,
-		slidesToShow: 4,
-		slidesToScroll: 4,
-		autoplay: true,
-		autoplaySpeed: 2000,
-		fade: true,
-		cssEase: 'linear',
-		arrows: false,
-		prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-		nextArrow: '<button type="button" class="slick-next">Next</button>',
-		responsive: [
-			{
-				breakpoint: 1024,
-				settings: {
-					slidesToShow: 3,
-					slidesToScroll: 3,
-					infinite: true,
-					dots: true
-				}
-			},
-			{
-				breakpoint: 600,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 2
-				}
-			},
-			{
-				breakpoint: 480,
-				settings: {
-					slidesToShow: 1,
-					slidesToScroll: 1
-				}
-			}
-			// You can unslick at a given breakpoint now by adding:
-			// settings: "unslick"
-			// instead of a settings object
-		]
+		// dots: true,
+		// infinite: false,
+		// speed: 300,
+		// slidesToShow: 4,
+		// slidesToScroll: 4,
+		// autoplay: true,
+		// autoplaySpeed: 2000,
+		// fade: true,
+		// cssEase: 'linear',
+		// arrows: false,
+		// prevArrow: '<button type="button" class="slick-prev">Previous</button>',
+		// nextArrow: '<button type="button" class="slick-next">Next</button>',
+		// responsive: [
+		// 	{
+		// 		breakpoint: 1024,
+		// 		settings: {
+		// 			slidesToShow: 3,
+		// 			slidesToScroll: 3,
+		// 			infinite: true,
+		// 			dots: true
+		// 		}
+		// 	},
+		// 	{
+		// 		breakpoint: 600,
+		// 		settings: {
+		// 			slidesToShow: 2,
+		// 			slidesToScroll: 2
+		// 		}
+		// 	},
+		// 	{
+		// 		breakpoint: 480,
+		// 		settings: {
+		// 			slidesToShow: 1,
+		// 			slidesToScroll: 1
+		// 		}
+		// 	}
+		// 	// You can unslick at a given breakpoint now by adding:
+		// 	// settings: "unslick"
+		// 	// instead of a settings object
+		// ]
 	});
 
 
@@ -319,45 +320,49 @@ $(document).ready(function () {
 
 	const da = new DynamicAdapt("max");
 	da.init();
+
+
+
+	// ====================Checkbox and Radio Buttons Style=========================================================================
+
+	//CHECKBOX
+	$.each($('.checkbox'), function (index, val) {
+		if ($(this).find('input').prop('checked') == true) {
+			$(this).addClass('active');
+		}
+	});
+	$(document).on('click', '.checkbox', function (event) {
+		if ($(this).hasClass('active')) {
+			$(this).find('input').prop('checked', false);
+		} else {
+			$(this).find('input').prop('checked', true);
+		}
+		$(this).toggleClass('active');
+
+		return false;
+	});
+
+	//RADIO
+	$.each($('.radiobuttons__item'), function (index, val) {
+		if ($(this).find('input').prop('checked') == true) {
+			$(this).addClass('active');
+		}
+	});
+	$(document).on('click', '.radiobuttons__item', function (event) {
+		$(this).parents('.radiobuttons').find('.radiobuttons__item').removeClass('active');
+		$(this).parents('.radiobuttons').find('.radiobuttons__item input').prop('checked', false);
+		$(this).toggleClass('active');
+		$(this).find('input').prop('checked', true);
+		return false;
+	});
+
+
+
+
+	// ===============================================================================================================================================
+
+
+	// ===============================================================================================================================================
+	console.log(5);
+
 });
-
-// ====================Checkbox and Radio Buttons Style=========================================================================
-
-//CHECKBOX
-$.each($('.checkbox'), function(index, val) {
-	if($(this).find('input').prop('checked')==true){
-		$(this).addClass('active');
-	}
-});
-$(document).on('click', '.checkbox', function(event) {
-	if($(this).hasClass('active')){
-		$(this).find('input').prop('checked',false);
-	}else{
-		$(this).find('input').prop('checked',true);
-	}
-	$(this).toggleClass('active');
-	
-	return false;
-});
-
-//RADIO
-$.each($('.radiobuttons__item'), function(index, val) {
-	if($(this).find('input').prop('checked')==true){
-		$(this).addClass('active');
-	}
-});
-$(document).on('click', '.radiobuttons__item', function(event) {
-	$(this).parents('.radiobuttons').find('.radiobuttons__item').removeClass('active');
-	$(this).parents('.radiobuttons').find('.radiobuttons__item input').prop('checked',false);
-	$(this).toggleClass('active');
-	$(this).find('input').prop('checked',true);
-	return false;
-});
-
-// ===============================================================================================================================================
-
-
-// ===============================================================================================================================================
-
-
-// ===============================================================================================================================================
