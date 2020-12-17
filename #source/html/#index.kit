@@ -4,7 +4,41 @@
 	<div class="wrapper">
 		<!-- @import "header.html" -->
 
+		<section class="form">
+			<form action="#" id="form" class="form__body">
+				<h1 class="form__title">
+					Send Message
+				</h1>
+				<div class="form__item">
+					<label for="name" class="form__label">
+						Name
+					</label>
+					<input autocomplete="off" type="text" name="name" data-error="Ошибка" data-value="" class="form__input">
+				</div>
+				<div class="form__item">
+					<label for="email" class="form__label">
+						Email
+					</label>
+					<input id="email" autocomplete="off" type="text" name="email" data-error="Ошибка" data-value="" class="form__input">
+				</div>
+				<div class="form__item">
+					<div class="form__title">
+						right or left?
+					</div>
+					<div class="form__options">
+						<div class="form__options-item">
+							<input id="right" checked autocomplete="off" type="radio" value="right" name="hand" data-error="Ошибка" data-value="" class="form__options-input">
+							<label for="right" class="form__options-label">right</label>
+						</div>
+						<div class="form__options-item">
+							<input id="left" autocomplete="off" type="radio" value="left" name="hand" data-error="Ошибка" data-value="" class="form__options-input">
+							<label for="left" class="form__options-label">left</label>
+						</div>
+					</div>
+				</div>
 
+			</form>
+		</section>
 	
 
 

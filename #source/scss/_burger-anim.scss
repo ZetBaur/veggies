@@ -1,0 +1,53 @@
+//============Burger css animation======================
+
+
+.header__burger-line-1 {
+    @keyframes burger1 {
+        0% {
+            width: 100%;
+        }
+
+        50% {
+            width: 130%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    animation-name: burger1;
+    animation-duration: 1s;
+}
+.header__burger-line-2 {
+    @keyframes burger2 {
+        0% {
+            width: 100%;
+        }
+
+        50% {
+            width: 160%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    animation-name: burger2;
+    animation-duration: 1s;
+    animation-delay: .2s;
+}
+.header__burger-line-3 {
+    @keyframes burger3 {
+        0% {
+            width: 100%;
+        }
+
+        50% {
+            width: 130%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    animation-name: burger3;
+    animation-duration: 1s;
+    animation-delay: .4s;
+}

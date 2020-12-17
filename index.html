@@ -20,7 +20,41 @@
 		</div>
 	</div>
 </header>
+		<section class="form">
+			<form action="#" id="form" class="form__body">
+				<h1 class="form__title">
+					Send Message
+				</h1>
+				<div class="form__item">
+					<label for="name" class="form__label">
+						Name
+					</label>
+					<input autocomplete="off" type="text" name="name" data-error="Ошибка" data-value="" class="form__input">
+				</div>
+				<div class="form__item">
+					<label for="email" class="form__label">
+						Email
+					</label>
+					<input id="email" autocomplete="off" type="text" name="email" data-error="Ошибка" data-value="" class="form__input">
+				</div>
+				<div class="form__item">
+					<div class="form__title">
+						right or left?
+					</div>
+					<div class="form__options">
+						<div class="form__options-item">
+							<input id="right" checked autocomplete="off" type="radio" value="right" name="hand" data-error="Ошибка" data-value="" class="form__options-input">
+							<label for="right" class="form__options-label">right</label>
+						</div>
+						<div class="form__options-item">
+							<input id="left" autocomplete="off" type="radio" value="left" name="hand" data-error="Ошибка" data-value="" class="form__options-input">
+							<label for="left" class="form__options-label">left</label>
+						</div>
+					</div>
+				</div>
 
+			</form>
+		</section>
 	
 
 
@@ -47,6 +81,26 @@
 	<p>This is dummy copy. It is not meant to be read. It has been placed here solely to demonstrate the look and feel
 		of finished, typeset text. Only for show. He who searches for meaning here will be sorely disappointed.</p>
 </div> -->
+
+<!-- Andrik Popup================================================================================================================ -->
+<div class="popup popup_callback">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close"></div>
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem officiis earum laudantium, adipisci reiciendis porro magni unde nostrum fuga inventore ipsum sunt minus dolorem repellendus illum aliquam blanditiis similique quaerat!
+		</div>
+	</div>
+</div>
+
+<div class="popup popup_video">
+	<div class="popup__content">
+		<div class="popup__body">
+			<div class="popup__close popup__close_video"></div>
+			<div class="popup__video _video"></div>
+		</div>
+	</div>
+</div>
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 <script src="js/main-plugins.js"></script>
