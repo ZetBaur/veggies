@@ -1,0 +1,214 @@
+@media (max-width: 1700px) {
+    .container {
+        max-width: 1170px;
+    }
+    .promo__content {
+        padding: 330px 0px 450px 479px;
+    }
+    .specials__row-decr {
+        padding: 20px;
+    }
+    .contact__body {
+        padding: 40px 0px 40px 629px;
+    }
+    .contact__address:nth-child(2) {
+        margin: 0;
+    }
+    .contact__address-row {
+        margin: 0px 0px 20px 0px;
+    }
+    .contact__title {
+        margin: 0px 0px 85px 0px;
+    }
+    .yellow__column {
+        padding: 0px 20px;
+    }
+    .yellow__row {
+        margin: 0px -20px;
+    }
+    .contact__form-textarea {
+        margin: 0px 0px 30px 0px;
+    }
+    .about__descr {
+        padding: 30px 0px;
+    }
+    .menu {
+        padding: 30px 0px;
+    }
+    .specials {
+        padding: 30px 0px;
+    }
+}
+
+// ======================================================================================================================================================
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+    .promo__menu-item {
+        margin: 0px 0px 0px 0px;
+    }
+    .promo__content {
+        padding: 136px 0px 239px 268px;
+    }
+    .yellow__row {
+        padding: 30px 0px;
+    }
+    .yellow__img {
+        margin: 0px 0px 20px 0px;
+    }
+    .yellow__title {
+        margin: 0px 0px 20px 0px;
+    }
+    .specials__row-item {
+        width: 50%;
+    }
+    .about__title {
+        margin: 0px 0px 60px 0px;
+    }
+    .about__text {
+        margin: 0px 0px 20px 0px;
+        line-height: 35px;
+    }
+    .contact {
+        background-image: none;
+        background-color: #ecedee;
+    }
+    .contact__body {
+        padding: 20px 0px 20px 0px;
+    }
+}
+// ======================================================================================================================================================
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .promo__header {
+        height: 100px;
+    }
+    .menu__column-title {
+        font-size: 13px;
+    }
+    .contact__form-input-textarea {
+        line-height: 50px;
+    }
+    .yellow__row {
+        margin: 0;
+    }
+}
+// ======================================================================================================================================================
+
+@media (max-width: 767px) {
+    .container {
+        max-width: none;
+    }
+    .promo__content {
+        padding: 50px 0 100px 0px;
+    }
+    .yellow__column {
+        width: 100%;
+        margin: 0px 0px 30px 0px;
+    }
+    .yellow__row {
+        flex-wrap: wrap;
+    }
+    .specials__row-item {
+        width: 100%;
+    }
+    .specials__row-title {
+        margin: 0px 0px 10px 0px;
+    }
+    .specials__row-text {
+        margin: 0px 0px 10px 0px;
+    }
+    .specials__row-decr {
+        padding: 10px 5px;
+    }
+    .about__row {
+        flex-wrap: wrap;
+    }
+    .about__img,
+    .about__descr {
+        flex: 0 0 100%;
+    }
+    .menu__list {
+        flex-wrap: wrap;
+        margin: 0px 0px 10px 0px;
+    }
+    .menu__tabs-item {
+        margin: 0;
+    }
+    .menu__row {
+        flex-wrap: wrap;
+    }
+    .menu__column {
+        width: 100%;
+    }
+    .menu__column:nth-child(2),
+    .menu__column:nth-child(1) {
+        padding: 0;
+    }
+    .contact__address-row {
+        flex-wrap: wrap;
+    }
+    .contact__address {
+        width: 100%;
+        text-align: left;
+        margin: 0px 0px 20px 0px;
+    }
+    .contact__address:nth-child(2) {
+        padding: 0;
+    }
+    .contact__form-row {
+        flex-wrap: wrap;
+    }
+    .contact__form-line {
+        width: 100%;
+        margin: 20px;
+    }
+    .contact__form-line:nth-child(2),
+    .contact__form-line:nth-child(1) {
+        margin: 0;
+        padding: 0;
+    }
+
+    .promo__header-burger {
+        display: block;
+    }
+    .promo__menu-close {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+    .menu-list {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #faca10;
+        flex-direction: column;
+        z-index: 10;
+        justify-content: space-between;
+        align-items: center;
+        padding: 80px 0px;
+        transform: translateY(-120%);
+        transition: all 0.3s;
+        &.open {
+            transform: translateY(0);
+        }
+    }
+    #pageup {
+        right: 20px;
+        bottom: 30px;
+    }
+    .title {
+        color: grey;
+    }
+}
